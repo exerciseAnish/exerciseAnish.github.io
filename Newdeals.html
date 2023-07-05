@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Deals - Music Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    .header h1 {
+      margin: 0;
+      padding: 0;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    
+    table th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    
+    .form-container {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    
+    .form-container h2 {
+      margin: 0 0 10px 0;
+    }
+    
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    
+    .form-container button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 3px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>New Deals - Music Shop</h1>
+  </header>
+  
+  <h2>Check out our latest deals on musical instruments:</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Instrument</th>
+        <th>Model</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Guitar</td>
+        <td>Acoustic</td>
+        <td>$250</td>
+      </tr>
+      <tr>
+        <td>Drums</td>
+        <td>Rock</td>
+        <td>$350</td>
+      </tr>
+      <tr>
+        <td>Piano</td>
+        <td>Grand</td>
+        <td>$3500</td>
+      </tr>
+      <tr>
+        <td>Flute</td>
+        <td>Concert</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Saxophone</td>
+        <td>Alto</td>
+        <td>$1600</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div class="form-container">
+    <h2>Subscribe for more deals:</h2>
+    <form id="subscribe-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="instrument">Favorite Instrument:</label>
+      <select id="instrument" name="instrument">
+        <option value="guitar">Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="piano">Piano</option>
+        <option value="flute">Flute</option>
+        <option value="saxophone">Saxophone</option>
+      </select>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="Products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  
+  <div>
+    <h3>Music Shop</h3>
+    <p>Welcome to the Music Shop, where you can find a wide selection of musical instruments at great prices. From guitars and drums to pianos and flutes, we have it all. Subscribe to our newsletter to receive the latest deals and updates on your favorite instruments.</p>
+    <img src="guitar.jpeg" alt="Guitar Image" width="300">
+    <img src="piano.jpeg" alt="Piano GIF" width="300">
+    <img src="mandolin.jpeg" alt="Piano GIF" width="300">
+    <img src="flute.jpeg" alt="Piano GIF" width="300">
+
+  </div>
+  
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("subscribe-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let instrument = document.getElementById("instrument").value;
+      
+      // Perform validation using regex
+      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+      
+      // Process the form data or send it to a server
+      
+      alert("Congratulations, " + name + "! You have successfully subscribed. You will now receive new alert deals on your registered email for your favorite instrument: " + instrument + ".");
+      
+      // Optionally, reset the form
+      document.getElementById("subscribe-form").reset();
+    });
+  </script>
+</body>
+</html>

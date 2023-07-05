@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #instrument-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between instruments */
+  }
+  
+  .instrument {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .instrument h2 {
+    margin-bottom: 5px;
+  }
+  
+  .instrument img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .instrument ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  .instrument li {
+    margin-bottom: 5px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #ddd;
+  }

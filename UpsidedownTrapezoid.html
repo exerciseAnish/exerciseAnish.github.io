@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upside-down Trapezoid</title>
+  <script>
+    function drawTrapezoid() {
+      var width = parseInt(document.getElementById("width").value);
+      var height = parseInt(document.getElementById("height").value);
+      var shape = "";
+
+      if (height > width / 2) {
+        shape = "Impossible shape!";
+      } else {
+        for (var i = 0; i < height; i++) {
+          shape += " ".repeat(i) + "*".repeat(width - i * 2) + "<br>";
+        }
+      }
+
+      document.getElementById("result").innerHTML = "Shape: <br>" + shape;
+    }
+  </script>
+</head>
+<body>
+  <h1>Upside-down Trapezoid</h1>
+  <label for="width">Input width:</label>
+  <input type="number" id="width">
+  <br>
+  <label for="height">Input height:</label>
+  <input type="number" id="height">
+  <br>
+  <button onclick="drawTrapezoid()">Draw Trapezoid</button>
+  <br>
+  <div id="result"></div>
+</body>
+</html>

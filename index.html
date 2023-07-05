@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <p>Save 50% on first purchase of items more than $100</p>
+  </header>
+  
+  <section id="home">
+    <h1>Welcome to Music Shop</h1>
+    <p>It's time you picked an instrument. Select from a wide range of musical instruments.</p>
+    <form id="subscribe-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" onclick="showAlert()">Subscribe</button>
+    </form>
+
+    <header id="list">
+        <nav>
+          <ul>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Newdeals.html">New Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="guitar-animation">
+      <img src="Guitar.gif" alt="Guitar Animation">
+    </div>
+    <footer>
+      <div class="social-media">
+        <h4>Connect with us:</h4>
+        <nav>
+          <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p style="font-size: 12px;">&copy; 2023 Music Shop. All rights reserved.</p>
+    </footer>
+  </section>
+  <script src="script.js"></script>
+  <script>
+    function showAlert() {
+      alert("Congratulations for subscribing. Now you will receive new alert deals on the registered email.");
+    }
+  </script>
+</body>
+</html>

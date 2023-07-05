@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8e4b2e;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  margin-top: -10;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  
+  display: inline;
+  margin-right: 10px;
+ 
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footerlist{
+  background-color: navy;
+}
+
+#list{
+  text-align: right;
+}
+
+
+
+/* Home Page Styles */
+#home {
+  background-color: #f2f2f2;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 35px; /* Adjust the padding to make the section box smaller */
+  margin: 35px; /* Adjust the margin to create more space around the section box */
+
+}
+
+#home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: rgb(226, 85, 85);
+}
+
+#home p {
+  font-size: 18px;
+}
+
+#home form input {
+  padding: 5px 10px; /* Adjust the padding to make the input fields smaller */
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+#home form button {
+  padding: 5px 10px; /* Adjust the padding to make the button smaller */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.social-media{
+  background-color: orange;
+}
+.guitar-animation {
+  margin-top: 20px;
+  background-color: black; /* Change the background color here */
+
+}
+
+.guitar-animation img {
+  max-width: 100%;
+}
+
+
