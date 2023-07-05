@@ -7,3 +7,6 @@ The New Deals page showcases various musical instruments with their respective n
 The Contact Us page allows users to get in touch with the music shop by filling out a contact form. The form requires users to enter their name, email, subject, and message. Upon submission, a success message is displayed, and the form is reset. Contact information for the music shop, such as phone number, email, and address, is also provided.
 
 The app utilizes HTML, CSS, and JavaScript to create a user-friendly interface and functionality. It incorporates responsive design, form validation, and basic navigation elements like a back button.
+
+
+https://exerciseanish.github.io/ 
